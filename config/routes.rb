@@ -1,4 +1,6 @@
 Rue89strasbourg::Application.routes.draw do
+  root :to => 'homepage#show'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

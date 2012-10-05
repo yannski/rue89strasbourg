@@ -1,0 +1,424 @@
+!!!
+%html{:dir => "ltr", :lang => "fr-FR"}
+  %head
+    <meta http-equiv="Content-type" content="text/html; charset=UTF-8" utf-8"="">
+    %title Rue89 Strasbourg | Maintenant les Strasbourgeois ont leur média
+    %meta{:content => "Maintenant les Strasbourgeois ont leur média. ", :name => "description"}/
+    %meta{:content => "", :name => "keywords"}/
+    %meta{:content => "", :lang => "fr", :name => "author"}/
+    %meta{:content => "", :name => "robots"}/
+    %link{:href => "http://gmpg.org/xfn/11", :rel => "profile"}/
+    %link{:href => "http://preprod.rue89strasbourg.com/xmlrpc.php", :rel => "pingback"}/
+    = stylesheet_link_tag "application"
+    / Mobile Specific Metas     ==================================================
+    %meta{:content => "width=device-width, initial-scale=1, maximum-scale=1", :name => "viewport"}/
+    / Le HTML5 shim, for IE6-8 support of HTML5 elements
+    /[if lt IE 9]
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    / Le fav and touch icons
+    %link{:href => "http://preprod.rue89strasbourg.com/wp-content/themes/gabarit/ico/favicon.ico", :rel => "shortcut icon"}/
+    %link{:href => "http://preprod.rue89strasbourg.com/wp-content/themes/gabarit/ico/apple-touch-icon-144-precomposed.png", :rel => "apple-touch-icon-precomposed", :sizes => "144x144"}/
+    %link{:href => "http://preprod.rue89strasbourg.com/wp-content/themes/gabarit/ico/apple-touch-icon-114-precomposed.png", :rel => "apple-touch-icon-precomposed", :sizes => "114x114"}/
+    %link{:href => "http://preprod.rue89strasbourg.com/wp-content/themes/gabarit/ico/apple-touch-icon-72-precomposed.png", :rel => "apple-touch-icon-precomposed", :sizes => "72x72"}/
+    %link{:href => "http://preprod.rue89strasbourg.com/wp-content/themes/gabarit/ico/apple-touch-icon-57-precomposed.png", :rel => "apple-touch-icon-precomposed"}/
+    / DEBUT WP HEAD
+    %script{:src => "Rue89%20Strasbourg%20%7C%20Maintenant%20les%20Strasbourgeois%20ont%20leur%20m%C3%A9dia_fichiers/jquery_004.js", :type => "text/javascript"}
+    %script{:src => "Rue89%20Strasbourg%20%7C%20Maintenant%20les%20Strasbourgeois%20ont%20leur%20m%C3%A9dia_fichiers/jquery.js", :type => "text/javascript"}
+    %script{:src => "Rue89%20Strasbourg%20%7C%20Maintenant%20les%20Strasbourgeois%20ont%20leur%20m%C3%A9dia_fichiers/jquery_008.js", :type => "text/javascript"}
+    %script{:src => "Rue89%20Strasbourg%20%7C%20Maintenant%20les%20Strasbourgeois%20ont%20leur%20m%C3%A9dia_fichiers/jquery_013.js", :type => "text/javascript"}
+    %script{:src => "Rue89%20Strasbourg%20%7C%20Maintenant%20les%20Strasbourgeois%20ont%20leur%20m%C3%A9dia_fichiers/jquery_012.js", :type => "text/javascript"}
+    %script{:src => "Rue89%20Strasbourg%20%7C%20Maintenant%20les%20Strasbourgeois%20ont%20leur%20m%C3%A9dia_fichiers/jquery_015.js", :type => "text/javascript"}
+    %script{:src => "Rue89%20Strasbourg%20%7C%20Maintenant%20les%20Strasbourgeois%20ont%20leur%20m%C3%A9dia_fichiers/jquery_010.js", :type => "text/javascript"}
+    %script{:src => "Rue89%20Strasbourg%20%7C%20Maintenant%20les%20Strasbourgeois%20ont%20leur%20m%C3%A9dia_fichiers/jquery_007.js", :type => "text/javascript"}
+    %script{:src => "Rue89%20Strasbourg%20%7C%20Maintenant%20les%20Strasbourgeois%20ont%20leur%20m%C3%A9dia_fichiers/jquery_006.js", :type => "text/javascript"}
+    %script{:src => "Rue89%20Strasbourg%20%7C%20Maintenant%20les%20Strasbourgeois%20ont%20leur%20m%C3%A9dia_fichiers/jquery_011.js", :type => "text/javascript"}
+    %script{:src => "Rue89%20Strasbourg%20%7C%20Maintenant%20les%20Strasbourgeois%20ont%20leur%20m%C3%A9dia_fichiers/jquery_003.js", :type => "text/javascript"}
+    %script{:src => "Rue89%20Strasbourg%20%7C%20Maintenant%20les%20Strasbourgeois%20ont%20leur%20m%C3%A9dia_fichiers/jquery_009.js", :type => "text/javascript"}
+    :javascript
+      /*  */
+      var EM = {"ajaxurl":"http:\/\/preprod.rue89strasbourg.com\/wp-admin\/admin-ajax.php","locationajaxurl":"http:\/\/preprod.rue89strasbourg.com\/wp-admin\/admin-ajax.php?action=locations_search","firstDay":"1","locale":"fr","dateFormat":"dd\/mm\/yy","ui_css":"http:\/\/preprod.rue89strasbourg.com\/wp-content\/plugins\/events-manager\/includes\/css\/ui-lightness.css","show24hours":"1","is_ssl":"","bookingInProgress":"Veuillez patienter pendant que la r\u00e9servation est soumise.","tickets_save":"Enregistrer le billet","bookingajaxurl":"http:\/\/preprod.rue89strasbourg.com\/wp-admin\/admin-ajax.php","bookings_export_save":"Exporter les r\u00e9servations","bookings_settings_save":"Enregistrer","booking_delete":"\u00cates-vous s\u00fbr de vouloir le supprimer ?","bb_full":"Sold Out","bb_book":"R\u00e9servez Maintenant","bb_booking":"R\u00e9servation ...","bb_booked":"R\u00e9servation soumis","bb_error":"R\u00e9servation erreur. R\u00e9essayer?","bb_cancel":"Annuler","bb_canceling":"Annuler...","bb_cancelled":"Annul\u00e9","bb_cancel_error":"Annulation erreur. R\u00e9essayer?","txt_search":"Recherche","txt_searching":"Recherche en cours...","txt_loading":"Chargement en cours...","locale_data":{"closeText":"Fermer","prevText":"<Pr\u00e9c","nextText":"Suiv>","currentText":"Courant","monthNames":["Janvier","F\u00e9vrier","Mars","Avril","Mai","Juin","Juillet","Ao\u00fbt","Septembre","Octobre","Novembre","D\u00e9cembre"],"monthNamesShort":["Jan","F\u00e9v","Mar","Avr","Mai","Jun","Jul","Ao\u00fb","Sep","Oct","Nov","D\u00e9c"],"dayNames":["Dimanche","Lundi","Mardi","Mercredi","Jeudi","Vendredi","Samedi"],"dayNamesShort":["Dim","Lun","Mar","Mer","Jeu","Ven","Sam"],"dayNamesMin":["Di","Lu","Ma","Me","Je","Ve","Sa"],"weekHeader":"Sm","dateFormat":"dd\/mm\/yy","firstDay":1,"isRTL":false,"showMonthAfterYear":false,"yearSuffix":""}};
+      /*  */
+    %script{:src => "Rue89%20Strasbourg%20%7C%20Maintenant%20les%20Strasbourgeois%20ont%20leur%20m%C3%A9dia_fichiers/events-manager.js", :type => "text/javascript"}
+    %link{:href => "http://preprod.rue89strasbourg.com/xmlrpc.php?rsd", :rel => "EditURI", :title => "RSD", :type => "application/rsd+xml"}/
+    %link{:href => "http://preprod.rue89strasbourg.com/wp-includes/wlwmanifest.xml", :rel => "wlwmanifest", :type => "application/wlwmanifest+xml"}/
+    %meta{:content => "WordPress 3.4.2", :name => "generator"}/
+    / FIN WP HEAD
+    %link{:href => "Rue89%20Strasbourg%20%7C%20Maintenant%20les%20Strasbourgeois%20ont%20leur%20m%C3%A9dia_fichiers/widget.css", :rel => "stylesheet", :type => "text/css"}/
+    :css
+      #twtr-widget-1 .twtr-avatar { display: none; } #twtr-widget-1 .twtr-tweet-text { margin-left: 0; }    :css
+      #twtr-widget-1 .twtr-doc,                      #twtr-widget-1 .twtr-hd a,                      #twtr-widget-1 h3,                      #twtr-widget-1 h4 {            background-color: #D8D7E5 !important;            color: #333 !important;          }          #twtr-widget-1 .twtr-tweet a {            color: #545665 !important;          }          #twtr-widget-1 .twtr-bd, #twtr-widget-1 .twtr-timeline i a,           #twtr-widget-1 .twtr-bd p {            color: #000000 !important;          }          #twtr-widget-1 .twtr-new-results,           #twtr-widget-1 .twtr-results-inner,           #twtr-widget-1 .twtr-timeline {            background: #ffffff !important;          }  %body.home.blog
+    #nav-rapid.navbar.navbar-fixed-top
+      .navbar-inner
+        .container
+          %a.btn.btn-navbar{"data-target" => ".nav-collapse", "data-toggle" => "collapse"}
+            %span.icon-bar
+            %span.icon-bar
+            %span.icon-bar
+          %a.brand{:href => "http://preprod.rue89strasbourg.com/index.html"} Navigation rapide
+          .nav-collapse.collapse
+            %ul.nav
+              %li.active
+                %a{"data-target" => ".nav-collapse", "data-toggle" => "collapse", :href => "http://preprod.rue89strasbourg.com/index.html"} l'Agenda
+              %li
+                %a{"data-target" => ".nav-collapse", "data-toggle" => "collapse", :href => "http://preprod.rue89strasbourg.com/index.html"} Les dossiers Rue89 Strasbourg
+              %li
+                %a{"data-target" => ".nav-collapse", "data-toggle" => "collapse", :href => "http://preprod.rue89strasbourg.com/index.html"} Tous les blogs
+              %li.divider-vertical
+              %li
+                %a{"data-target" => ".nav-collapse", "data-toggle" => "collapse", :href => "http://preprod.rue89strasbourg.com/index.html"} Les locales
+              %li
+                %a{"data-target" => ".nav-collapse", "data-toggle" => "collapse", :href => "http://preprod.rue89strasbourg.com/index.html"} Contact
+    #page.container-fluid
+      / boussole
+      #boussole
+        / Content
+        .content{:style => "display:none;"}
+          .clearfix
+            %h1.title89
+              Me
+              %strong connecter
+            %h2
+              Avec un compte Rue
+              %span 89
+            #login.border
+              %p
+                Identifiant:
+                %input#username{:name => "username", :size => "15", :type => "text"}/
+                %br/
+                Mot de passe:
+                %input#password{:name => "password", :size => "15", :type => "password"}/
+                %br/
+                %input#login_btn{:accesskey => "l", :name => "login", :type => "button", :value => "Login"}/
+            .services
+              %h2 Et bientôt avec Facebook, Twitter, Google ou OpenID
+              %ul.clearfix
+                %li
+                  %a.facebook{:href => "#"} Facebook
+                %li.even
+                  %a.twitter{:href => "#"} Twitter
+                %li
+                  %a.google{:href => "#"} Google
+                %li.even
+                  %a.openid{:href => "#"} OpenID
+        / END Content
+        .expand
+          %div
+            %a{:href => "#"} Vous-connectez
+      / END boussole
+      %header#branding.row-fluid.show-grid
+        .row-fluid
+          #newsletter.span6
+            %h3 NewsLetter
+            %form{:action => "http://feedburner.google.com/fb/a/mailverify", :method => "post", :onsubmit => "window.open('http://feedburner.google.com/fb/a/mailverify?uri=Rue89Strasbourg', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true", :target => "popupwindow"}
+              %input.saisie_newsletter{:name => "email", :type => "text"}/
+              %input{:name => "uri", :type => "hidden", :value => "Rue89Strasbourg"}/
+              %input{:name => "loc", :type => "hidden", :value => "fr_FR"}/
+              %input.bout_gauche{:type => "submit", :value => "OK"}/
+          #input-search-header.span6
+            %h3 Recherche
+            %form.searchform{:action => "http://preprod.rue89strasbourg.com", :method => "get", :role => "search"}
+              %div
+                %input#s.search-input{:name => "s", :type => "text"}/
+                %input.searchsubmit{:src => "Rue89%20Strasbourg%20%7C%20Maintenant%20les%20Strasbourgeois%20ont%20leur%20m%C3%A9dia_fichiers/btn-search.png", :type => "image", :value => "Rechercher"}/
+        %hgroup#site-title.row-fluid
+          .span2
+            %a{:href => "http://preprod.rue89strasbourg.com/"}
+              %img{:alt => "Rue89 Strasbourg", :src => "Rue89%20Strasbourg%20%7C%20Maintenant%20les%20Strasbourgeois%20ont%20leur%20m%C3%A9dia_fichiers/logo.png"}/
+          %nav#mainnav.span7
+            .menu-principal-container
+              %ul#menu-principal.menu
+                %li#menu-item-27.menu-item.menu-item-type-taxonomy.menu-item-object-category.menu-item-27
+                  %a{:href => "http://preprod.rue89strasbourg.com/category/politique"} Politique
+                %li#menu-item-28.menu-item.menu-item-type-taxonomy.menu-item-object-category.menu-item-28
+                  %a{:href => "http://preprod.rue89strasbourg.com/category/societe"} Société
+                %li#menu-item-26.menu-item.menu-item-type-taxonomy.menu-item-object-category.menu-item-26
+                  %a{:href => "http://preprod.rue89strasbourg.com/category/culture"} Culture
+                %li#menu-item-29.menu-item.menu-item-type-taxonomy.menu-item-object-category.menu-item-29
+                  %a{:href => "http://preprod.rue89strasbourg.com/category/vie-pratique"} Vie pratique
+          .span3.bg_base_fond
+            .row-fluid
+              .span12
+                %a.tw{:href => "http://twitter.com/rue89strasbourg"} twitter
+                %a.fb{:href => "http://facebook.com/rue89strasbourg"} facebook
+                %a.rss{:href => "http://preprod.rue89strasbourg.com/feed"} rss
+            #agenda.row-fluid
+              %h4.span12
+                %a{:href => "http://preprod.rue89strasbourg.com/index-sorties-culturelles-strasbourg-agenda"} Agenda
+            #meteo.row-fluid
+              %h4.span12 Module Météo
+      #head_pub.row-fluid.show-grid
+        / MegaBanner
+        .span12
+          %img{:src => "Rue89%20Strasbourg%20%7C%20Maintenant%20les%20Strasbourgeois%20ont%20leur%20m%C3%A9dia_fichiers/pub_728_90.png"}/
+      = yield
+      / end wrap
+      / btn pour remonter le contenu
+    / end page
+    %footer#footer.footer
+      .content.container-fluid
+        .row-fluid
+          .une.span6
+            %h4.title89
+              A
+              %span LA
+              %strong UNE
+            %ul
+              %li.clearfix
+                %a.illus{:href => "http://preprod.rue89strasbourg.com/2012/06/06/art-et-histoire-9939"}
+                  %img.attachment-mini-thumb.wp-post-image{:alt => "tumblr_m55uo6U0xr1rqxua6o1_500", :height => "69", :src => "Rue89%20Strasbourg%20%7C%20Maintenant%20les%20Strasbourgeois%20ont%20leur%20m%C3%A9dia_fichiers/tumblr_m55uo6U0xr1rqxua6o1_500.jpg", :title => "tumblr_m55uo6U0xr1rqxua6o1_500", :width => "81"}/
+                %div
+                  %a{:href => "http://preprod.rue89strasbourg.com/2012/06/06/art-et-histoire-9939", :title => "ART ET HISTOIRE"} ART ET HISTOIRE
+                  %br/
+                  %span.author par Laurent
+              %li.clearfix
+                %a.illus{:href => "http://preprod.rue89strasbourg.com/2012/04/26/qui-fait-la-mode-a-strasbourg-7703"}
+                  %img.attachment-mini-thumb.wp-post-image{:alt => "Strasbourg vue par des passionnés de mode pour l'exposition photo aux Galeries Lafayette", :height => "60", :src => "Rue89%20Strasbourg%20%7C%20Maintenant%20les%20Strasbourgeois%20ont%20leur%20m%C3%A9dia_fichiers/IMG_7288.jpg", :title => "Expo photo made in mode Galeries Lafayette", :width => "90"}/
+                %div
+                  %a{:href => "http://preprod.rue89strasbourg.com/2012/04/26/qui-fait-la-mode-a-strasbourg-7703", :title => "Qui fait la mode à Strasbourg&nbsp;?"} Qui fait la mode à Strasbourg&nbsp;?
+                  %br/
+                  %span.author par Sarah Ollivier
+              %li.clearfix
+                %a.illus{:href => "http://preprod.rue89strasbourg.com/2012/06/07/in-girum-imus-nocte-9955"}
+                  %img.attachment-mini-thumb.wp-post-image{:alt => "Chemical Agents, Occupy Oakland Move In Day (30 of 31)", :height => "59", :src => "Rue89%20Strasbourg%20%7C%20Maintenant%20les%20Strasbourgeois%20ont%20leur%20m%C3%A9dia_fichiers/6782751111_36cdfa3a49_b.jpg", :title => "Chemical Agents, Occupy Oakland Move In Day (30 of 31)", :width => "90"}/
+                %div
+                  %a{:href => "http://preprod.rue89strasbourg.com/2012/06/07/in-girum-imus-nocte-9955", :title => "In girum imus nocte…"} In girum imus nocte…
+                  %br/
+                  %span.author par Laurent
+              %li.clearfix
+                %a.illus{:href => "http://preprod.rue89strasbourg.com/2012/06/13/test-graphiques-second-tour-10013"}
+                  %img.attachment-mini-thumb.wp-post-image{:height => "69", :src => "Rue89%20Strasbourg%20%7C%20Maintenant%20les%20Strasbourgeois%20ont%20leur%20m%C3%A9dia_fichiers/no_thumb.jpg", :width => "90"}/
+                %div
+                  %a{:href => "http://preprod.rue89strasbourg.com/2012/06/13/test-graphiques-second-tour-10013", :title => "Test graphiques second tour"} Test graphiques second tour
+                  %br/
+                  %span.author par Pierre France
+              %li.clearfix
+                %a.illus{:href => "http://preprod.rue89strasbourg.com/2012/05/21/rue89-strasbourg-lance-son-offre-de-formations-9670"}
+                  %img.attachment-mini-thumb.wp-post-image{:alt => "formations", :height => "67", :src => "Rue89%20Strasbourg%20%7C%20Maintenant%20les%20Strasbourgeois%20ont%20leur%20m%C3%A9dia_fichiers/formations.jpg", :title => "formations", :width => "90"}/
+                %div
+                  %a{:href => "http://preprod.rue89strasbourg.com/2012/05/21/rue89-strasbourg-lance-son-offre-de-formations-9670", :title => "Rue89 Strasbourg lance son offre de formations"} Rue89 Strasbourg lance son offre de formations
+                  %br/
+                  %span.author par Pierre France
+          .rue89_actu.span2
+            %h4.title89
+              RUE
+              %strong 89
+              %span.actu actu
+            %ul.clearfix
+              %li
+                %span.time 18:33
+                %a{:href => "http://preprod.rue89strasbourg.com/2012/06/13/test-graphiques-second-tour-10013", :title => "Test graphiques second tour"}
+                  Test graphiques second tour
+                %br/
+                %span.source 13 juin 2012
+              %li
+                %span.time 6:17
+                %a{:href => "http://preprod.rue89strasbourg.com/2012/06/04/la-piscine-du-wacken-en-plein-travaux-ouvre-le-30-juin-9875", :title => "La piscine du Wacken, en plein travaux, ouvre le 30 juin"}
+                  La piscine du Wacken, en plein travaux, ouvre le 30 juin
+                %br/
+                %span.source 4 juin 2012
+              %li
+                %span.time 10:53
+                %a{:href => "http://preprod.rue89strasbourg.com/2012/06/02/francesca-woodman-retrospective-au-guggenheim-museum-de-new-york-9876", :title => "Francesca Woodman&nbsp;: rétrospective au Guggenheim Museum de New York"}
+                  Francesca Woodman&nbsp;: rétrospective au Guggenheim Museum de New York
+                %br/
+                %span.source 2 juin 2012
+              %li
+                %span.time 17:44
+                %a{:href => "http://preprod.rue89strasbourg.com/2012/06/01/test-de-live-blog-9850", :title => "Test de Live Blog"}
+                  Test de Live Blog
+                %br/
+                %span.source 1 juin 2012
+              %li
+                %span.time 17:04
+                %a{:href => "http://preprod.rue89strasbourg.com/2012/05/21/coop-le-conseil-general-veut-rassurer-9730", :title => "Coop : le conseil général veut rassurer"}
+                  Coop : le conseil général veut rassurer
+                %br/
+                %span.source 21 mai 2012
+          .bestof.span4
+            %ul#myTab_footer.nav.clearfix.nav-tabs
+              %li.active
+                %a{:href => "#selection"}
+                  La
+                  %strong sélection
+              %li
+                %a{:href => "#lus"}
+                  %span Les
+                  +
+                  %strong lus
+              %li
+                %a{:href => "#notes"}
+                  Les
+                  %span +
+                  %strong commentés
+            .tab-content.bestof
+              #selection.section.selection.tab-pane.active
+                %ul{:style => ""}
+                  %li.clearfix
+                    %a{:href => "http://preprod.rue89strasbourg.com/2012/07/12/un-event-10055", :title => "Un event"}
+                      http://preprod.rue89strasbourg.com/wp-content/themes/gabarit
+                      %img.wpp-thumbnail{:height => "69", :src => "Rue89%20Strasbourg%20%7C%20Maintenant%20les%20Strasbourgeois%20ont%20leur%20m%C3%A9dia_fichiers/no_thumb.html", :width => "90"}/
+                    %div
+                      %a{:href => "http://preprod.rue89strasbourg.com/2012/07/12/un-event-10055", :title => "Un event"}
+                        Un event
+                      %br/
+                      %span.author par Laurent
+                  %li.clearfix
+                    %a{:href => "http://preprod.rue89strasbourg.com/2012/06/15/test-france-bleu-10028", :title => "test France bleu"}
+                      http://preprod.rue89strasbourg.com/wp-content/themes/gabarit
+                      %img.wpp-thumbnail{:height => "69", :src => "Rue89%20Strasbourg%20%7C%20Maintenant%20les%20Strasbourgeois%20ont%20leur%20m%C3%A9dia_fichiers/no_thumb.html", :width => "90"}/
+                    %div
+                      %a{:href => "http://preprod.rue89strasbourg.com/2012/06/15/test-france-bleu-10028", :title => "test France bleu"}
+                        test France bleu
+                      %br/
+                      %span.author par Laurent
+                  %li.clearfix
+                    %a{:href => "http://preprod.rue89strasbourg.com/2012/06/13/test-graphiques-second-tour-10013", :title => "Test graphiques second tour"}
+                      http://preprod.rue89strasbourg.com/wp-content/themes/gabarit
+                      %img.wpp-thumbnail{:height => "69", :src => "Rue89%20Strasbourg%20%7C%20Maintenant%20les%20Strasbourgeois%20ont%20leur%20m%C3%A9dia_fichiers/no_thumb.html", :width => "90"}/
+                    %div
+                      %a{:href => "http://preprod.rue89strasbourg.com/2012/06/13/test-graphiques-second-tour-10013", :title => "Test graphiques second tour"}
+                        Test graphiques second tour
+                      %br/
+                      %span.author par Pierre France
+                  %li.clearfix
+                    %a{:href => "http://preprod.rue89strasbourg.com/2012/06/09/suivez-les-elections-legislatives-a-strasbourg-9976", :title => "Suivez les élections législatives à Strasbourg"}
+                      http://preprod.rue89strasbourg.com/wp-content/themes/gabarit
+                      %img.wpp-thumbnail{:height => "69", :src => "Rue89%20Strasbourg%20%7C%20Maintenant%20les%20Strasbourgeois%20ont%20leur%20m%C3%A9dia_fichiers/no_thumb.html", :width => "90"}/
+                    %div
+                      %a{:href => "http://preprod.rue89strasbourg.com/2012/06/09/suivez-les-elections-legislatives-a-strasbourg-9976", :title => "Suivez les élections législatives à Strasbourg"}
+                        Suivez les élections législatives à Strasbourg
+                      %br/
+                      %span.author par Rue89 Strasbourg
+                  %li.clearfix
+                    %a{:href => "http://preprod.rue89strasbourg.com/2012/06/07/in-girum-imus-nocte-9955", :title => "In girum imus nocte…"}
+                      %img.attachment-mini-thumb.wp-post-image{:alt => "Chemical Agents, Occupy Oakland Move In Day (30 of 31)", :height => "59", :src => "Rue89%20Strasbourg%20%7C%20Maintenant%20les%20Strasbourgeois%20ont%20leur%20m%C3%A9dia_fichiers/6782751111_36cdfa3a49_b.jpg", :title => "Chemical Agents, Occupy Oakland Move In Day (30 of 31)", :width => "90"}/
+                    %div
+                      %a{:href => "http://preprod.rue89strasbourg.com/2012/06/07/in-girum-imus-nocte-9955", :title => "In girum imus nocte…"}
+                        In girum imus nocte…
+                      %br/
+                      %span.author par Laurent
+              #lus.section.lus.tab-pane
+                / Wordpress Popular Posts Plugin v2.3.2 [SC] [all] [custom]
+                %ul
+                  %li.clearfix
+                    %div
+                      %a.wpp-thumbnail{:href => "http://preprod.rue89strasbourg.com/2012/02/27/les-locataires-de-joseph-benamran-sont-au-bord-de-la-crise-de-nerf-1801", :title => "Les locataires de Joseph Benamran sont au bord de la crise de nerf"}
+                        %img.wpp-thumbnail.wpp_fi{:alt => "Les locataires de Joseph Benamran sont au bord de la crise de nerf", :border => "0", :height => "0", :src => "Rue89%20Strasbourg%20%7C%20Maintenant%20les%20Strasbourgeois%20ont%20leur%20m%C3%A9dia_fichiers/timthumb_007.jpeg", :width => "90"}/
+                      %a.wpp-post-title{:href => "http://preprod.rue89strasbourg.com/2012/02/27/les-locataires-de-joseph-benamran-sont-au-bord-de-la-crise-de-nerf-1801", :title => "Les locataires de Joseph Benamran sont au bord de la crise de nerf"} Les locataires de Joseph Benamran sont au bord de la crise de nerf
+                      %span.wpp-author par Noémie Rousseau
+                  %li.clearfix
+                    %div
+                      %a.wpp-thumbnail{:href => "http://preprod.rue89strasbourg.com/2012/03/14/ce-soir-suivez-et-commentez-en-direct-le-meeting-deva-joly-4266", :title => "Cohn-Bendit et Bové, stars encombrantes au meeting d’Eva Joly"}
+                        %img.wpp-thumbnail.wpp_fi{:alt => "Cohn-Bendit et Bové, stars encombrantes au meeting d’Eva Joly", :border => "0", :height => "0", :src => "Rue89%20Strasbourg%20%7C%20Maintenant%20les%20Strasbourgeois%20ont%20leur%20m%C3%A9dia_fichiers/timthumb_003.jpeg", :width => "90"}/
+                      %a.wpp-post-title{:href => "http://preprod.rue89strasbourg.com/2012/03/14/ce-soir-suivez-et-commentez-en-direct-le-meeting-deva-joly-4266", :title => "Cohn-Bendit et Bové, stars encombrantes au meeting d’Eva Joly"} Cohn-Bendit et Bové, stars encombrantes au meeting d’Eva Joly
+                      %span.wpp-author par Marie Marty
+                  %li.clearfix
+                    %div
+                      %a.wpp-thumbnail{:href => "http://preprod.rue89strasbourg.com/2012/04/28/roppenheim-temple-des-affaires-7879", :title => "Roppenheim&nbsp;: le parc où les attractions sont des commerces"}
+                        %img.wpp-thumbnail.wpp_fi{:alt => "Roppenheim&nbsp;: le parc où les attractions sont des commerces", :border => "0", :height => "0", :src => "Rue89%20Strasbourg%20%7C%20Maintenant%20les%20Strasbourgeois%20ont%20leur%20m%C3%A9dia_fichiers/timthumb_004.jpeg", :width => "90"}/
+                      %a.wpp-post-title{:href => "http://preprod.rue89strasbourg.com/2012/04/28/roppenheim-temple-des-affaires-7879", :title => "Roppenheim&nbsp;: le parc où les attractions sont des commerces"} Roppenheim&nbsp;: le parc où les attractions sont des commerces
+                      %span.wpp-author par Marie Cardillo
+                  %li.clearfix
+                    %div
+                      %a.wpp-thumbnail{:href => "http://preprod.rue89strasbourg.com/2012/04/04/tribune-la-profession-davocat-devient-la-poubelle-du-monde-politique-6030", :title => "Tribune : La profession d’avocat devient la poubelle du monde politique"}
+                        %img.wpp-thumbnail.wpp_fi{:alt => "Tribune : La profession d’avocat devient la poubelle du monde politique", :border => "0", :height => "0", :src => "Rue89%20Strasbourg%20%7C%20Maintenant%20les%20Strasbourgeois%20ont%20leur%20m%C3%A9dia_fichiers/timthumb_005.jpeg", :width => "90"}/
+                      %a.wpp-post-title{:href => "http://preprod.rue89strasbourg.com/2012/04/04/tribune-la-profession-davocat-devient-la-poubelle-du-monde-politique-6030", :title => "Tribune : La profession d’avocat devient la poubelle du monde politique"} Tribune : La profession d’avocat devient la poubelle du monde politique
+                      %span.wpp-author par Tribune
+                  %li.clearfix
+                    %div
+                      %a.wpp-thumbnail{:href => "http://preprod.rue89strasbourg.com/2012/04/15/un-nouveau-resto-a-burgers-a-strasbourg-7031", :title => "Un nouveau resto à burgers à Strasbourg"}
+                        %img.wpp-thumbnail.wpp_fi{:alt => "Un nouveau resto à burgers à Strasbourg", :border => "0", :height => "0", :src => "Rue89%20Strasbourg%20%7C%20Maintenant%20les%20Strasbourgeois%20ont%20leur%20m%C3%A9dia_fichiers/timthumb.png", :width => "90"}/
+                      %a.wpp-post-title{:href => "http://preprod.rue89strasbourg.com/2012/04/15/un-nouveau-resto-a-burgers-a-strasbourg-7031", :title => "Un nouveau resto à burgers à Strasbourg"} Un nouveau resto à burgers à Strasbourg
+                      %span.wpp-author par Pierre France
+                / End Wordpress Popular Posts Plugin v2.3.2
+              %ul#notes.section.notes.tab-pane
+                / Wordpress Popular Posts Plugin v2.3.2 [SC] [all] [custom]
+              %ul
+                %li.clearfix
+                  %div
+                    %a.wpp-thumbnail{:href => "http://preprod.rue89strasbourg.com/2012/02/27/les-locataires-de-joseph-benamran-sont-au-bord-de-la-crise-de-nerf-1801", :title => "Les locataires de Joseph Benamran sont au bord de la crise de nerf"}
+                      %img.wpp-thumbnail.wpp_fi{:alt => "Les locataires de Joseph Benamran sont au bord de la crise de nerf", :border => "0", :height => "0", :src => "Rue89%20Strasbourg%20%7C%20Maintenant%20les%20Strasbourgeois%20ont%20leur%20m%C3%A9dia_fichiers/timthumb_007.jpeg", :width => "90"}/
+                    %a.wpp-post-title{:href => "http://preprod.rue89strasbourg.com/2012/02/27/les-locataires-de-joseph-benamran-sont-au-bord-de-la-crise-de-nerf-1801", :title => "Les locataires de Joseph Benamran sont au bord de la crise de nerf"} Les locataires de Joseph Benamran sont au bord de la crise de nerf
+                    %span.wpp-author par Noémie Rousseau
+                %li.clearfix
+                  %div
+                    %a.wpp-thumbnail{:href => "http://preprod.rue89strasbourg.com/2012/03/14/olivier-garrecht-lyceen-de-17-ans-maitrise-tous-les-codes-de-langage-du-fn-4205", :title => "Olivier Garrecht, lycéen de 17 ans, aspirant appliqué de l’armée Le Pen"}
+                      %img.wpp-thumbnail.wpp_fi{:alt => "Olivier Garrecht, lycéen de 17 ans, aspirant appliqué de l’armée Le Pen", :border => "0", :height => "0", :src => "Rue89%20Strasbourg%20%7C%20Maintenant%20les%20Strasbourgeois%20ont%20leur%20m%C3%A9dia_fichiers/timthumb_002.jpeg", :width => "90"}/
+                    %a.wpp-post-title{:href => "http://preprod.rue89strasbourg.com/2012/03/14/olivier-garrecht-lyceen-de-17-ans-maitrise-tous-les-codes-de-langage-du-fn-4205", :title => "Olivier Garrecht, lycéen de 17 ans, aspirant appliqué de l’armée Le Pen"} Olivier Garrecht, lycéen de 17 ans, aspirant appliqué de l’armée Le Pen
+                    %span.wpp-author par Lucie Dupin
+                %li.clearfix
+                  %div
+                    %a.wpp-thumbnail{:href => "http://preprod.rue89strasbourg.com/2012/05/10/ou-manger-des-burgers-a-strasbourg-8320", :title => "Où manger des burgers à Strasbourg&nbsp;?"}
+                      %img.wpp-thumbnail.wpp_fi{:alt => "Où manger des burgers à Strasbourg&nbsp;?", :border => "0", :height => "0", :src => "Rue89%20Strasbourg%20%7C%20Maintenant%20les%20Strasbourgeois%20ont%20leur%20m%C3%A9dia_fichiers/timthumb_006.jpeg", :width => "90"}/
+                    %a.wpp-post-title{:href => "http://preprod.rue89strasbourg.com/2012/05/10/ou-manger-des-burgers-a-strasbourg-8320", :title => "Où manger des burgers à Strasbourg&nbsp;?"} Où manger des burgers à Strasbourg&nbsp;?
+                    %span.wpp-author par Céline Herrmann
+                %li.clearfix
+                  %div
+                    %a.wpp-thumbnail{:href => "http://preprod.rue89strasbourg.com/2012/03/14/ce-soir-suivez-et-commentez-en-direct-le-meeting-deva-joly-4266", :title => "Cohn-Bendit et Bové, stars encombrantes au meeting d’Eva Joly"}
+                      %img.wpp-thumbnail.wpp_fi{:alt => "Cohn-Bendit et Bové, stars encombrantes au meeting d’Eva Joly", :border => "0", :height => "0", :src => "Rue89%20Strasbourg%20%7C%20Maintenant%20les%20Strasbourgeois%20ont%20leur%20m%C3%A9dia_fichiers/timthumb_003.jpeg", :width => "90"}/
+                    %a.wpp-post-title{:href => "http://preprod.rue89strasbourg.com/2012/03/14/ce-soir-suivez-et-commentez-en-direct-le-meeting-deva-joly-4266", :title => "Cohn-Bendit et Bové, stars encombrantes au meeting d’Eva Joly"} Cohn-Bendit et Bové, stars encombrantes au meeting d’Eva Joly
+                    %span.wpp-author par Marie Marty
+                %li.clearfix
+                  %div
+                    %a.wpp-thumbnail{:href => "http://preprod.rue89strasbourg.com/2012/05/02/foursquare-checkez-et-devenez-le-mayor-de-strasbourg-7484", :title => "Foursquare&nbsp;: Checkez et devenez le Mayor de Strasbourg&nbsp;!"}
+                      %img.wpp-thumbnail.wpp_fi{:alt => "Foursquare&nbsp;: Checkez et devenez le Mayor de Strasbourg&nbsp;!", :border => "0", :height => "0", :src => "Rue89%20Strasbourg%20%7C%20Maintenant%20les%20Strasbourgeois%20ont%20leur%20m%C3%A9dia_fichiers/timthumb.jpeg", :width => "90"}/
+                    %a.wpp-post-title{:href => "http://preprod.rue89strasbourg.com/2012/05/02/foursquare-checkez-et-devenez-le-mayor-de-strasbourg-7484", :title => "Foursquare&nbsp;: Checkez et devenez le Mayor de Strasbourg&nbsp;!"} Foursquare&nbsp;: Checkez et devenez le Mayor de Strasbourg&nbsp;!
+                    %span.wpp-author par Jean-Christophe Anna
+              / End Wordpress Popular Posts Plugin v2.3.2
+            / END tab-content
+      .annexes
+        .clearfix.container-fluid
+          .row-fluid
+            .logo.span2
+              %a{:href => "http://preprod.rue89strasbourg.com/wp-content/themes/gabarit"}
+                %img{:alt => "Rue89 Strasbourg", :src => "Rue89%20Strasbourg%20%7C%20Maintenant%20les%20Strasbourgeois%20ont%20leur%20m%C3%A9dia_fichiers/logo.png"}/
+              %br/
+              © 2012 Rue89 Strasbourg
+              %br/
+              %a{:href => "#"} Mentions légales
+            .span10
+              .menu-menu-en-pied-container
+                %ul#menu-menu-en-pied.menu
+                  %li#menu-item-10071.menu-item.menu-item-type-custom.menu-item-object-custom.current-menu-item.current_page_item.menu-item-home.menu-item-10071
+                    %a{:href => "http://preprod.rue89strasbourg.com/"} Accueil
+                  %li#menu-item-10072.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-10072
+                    %a{:href => "http://preprod.rue89strasbourg.com/participez-a-lindependance-de-rue89-strasbourg"} Abonnez-vous et garantissez l’indépendance de Rue89 Strasbourg
+                  %li#menu-item-10073.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-10073
+                    %a{:href => "http://preprod.rue89strasbourg.com/charte-des-commentaires"} Charte des commentaires
+                  %li#menu-item-10074.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-10074
+                    %a{:href => "http://preprod.rue89strasbourg.com/cgu"} Conditions générales d’utilisation
+                  %li#menu-item-10075.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-10075
+                    %a{:href => "http://preprod.rue89strasbourg.com/contact"} Contact
+                  %li#menu-item-10076.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-10076
+                    %a{:href => "http://preprod.rue89strasbourg.com/faq"} Faq (foire aux questions)
+                  %li#menu-item-10077.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-10077
+                    %a{:href => "http://preprod.rue89strasbourg.com/la-newsletter"} La newsletter
+                  %li#menu-item-10078.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-10078
+                    %a{:href => "http://preprod.rue89strasbourg.com/les-formations-de-rue89-strasbourg"} Les formations de Rue89 Strasbourg
+                  %li#menu-item-10079.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-10079
+                    %a{:href => "http://preprod.rue89strasbourg.com/mentions-legales"} Mentions légales
+                  %li#menu-item-10080.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-10080
+                    %a{:href => "http://preprod.rue89strasbourg.com/publicite"} Publicité
+    /
+      Le javascript
+      \==================================================
+    / Placed at the end of the document so the pages load faster
+    %script{:src => "Rue89%20Strasbourg%20%7C%20Maintenant%20les%20Strasbourgeois%20ont%20leur%20m%C3%A9dia_fichiers/jquery_005.js"}
+    %script{:src => "Rue89%20Strasbourg%20%7C%20Maintenant%20les%20Strasbourgeois%20ont%20leur%20m%C3%A9dia_fichiers/bootstrap-transition.js"}
+    %script{:src => "Rue89%20Strasbourg%20%7C%20Maintenant%20les%20Strasbourgeois%20ont%20leur%20m%C3%A9dia_fichiers/bootstrap-alert.js"}
+    %script{:src => "Rue89%20Strasbourg%20%7C%20Maintenant%20les%20Strasbourgeois%20ont%20leur%20m%C3%A9dia_fichiers/bootstrap-modal.js"}
+    %script{:src => "Rue89%20Strasbourg%20%7C%20Maintenant%20les%20Strasbourgeois%20ont%20leur%20m%C3%A9dia_fichiers/bootstrap-dropdown.js"}
+    %script{:src => "Rue89%20Strasbourg%20%7C%20Maintenant%20les%20Strasbourgeois%20ont%20leur%20m%C3%A9dia_fichiers/bootstrap-scrollspy.js"}
+    %script{:src => "Rue89%20Strasbourg%20%7C%20Maintenant%20les%20Strasbourgeois%20ont%20leur%20m%C3%A9dia_fichiers/bootstrap-tab.js"}
+    %script{:src => "Rue89%20Strasbourg%20%7C%20Maintenant%20les%20Strasbourgeois%20ont%20leur%20m%C3%A9dia_fichiers/bootstrap-tooltip.js"}
+    %script{:src => "Rue89%20Strasbourg%20%7C%20Maintenant%20les%20Strasbourgeois%20ont%20leur%20m%C3%A9dia_fichiers/bootstrap-popover.js"}
+    %script{:src => "Rue89%20Strasbourg%20%7C%20Maintenant%20les%20Strasbourgeois%20ont%20leur%20m%C3%A9dia_fichiers/bootstrap-button.js"}
+    %script{:src => "Rue89%20Strasbourg%20%7C%20Maintenant%20les%20Strasbourgeois%20ont%20leur%20m%C3%A9dia_fichiers/bootstrap-collapse.js"}
+    %script{:src => "Rue89%20Strasbourg%20%7C%20Maintenant%20les%20Strasbourgeois%20ont%20leur%20m%C3%A9dia_fichiers/bootstrap-carousel.js"}
+    %script{:src => "Rue89%20Strasbourg%20%7C%20Maintenant%20les%20Strasbourgeois%20ont%20leur%20m%C3%A9dia_fichiers/bootstrap-typeahead.js"}
+    %script{:src => "Rue89%20Strasbourg%20%7C%20Maintenant%20les%20Strasbourgeois%20ont%20leur%20m%C3%A9dia_fichiers/jquery_014.js"}
+    %script{:src => "Rue89%20Strasbourg%20%7C%20Maintenant%20les%20Strasbourgeois%20ont%20leur%20m%C3%A9dia_fichiers/jquery_002.js"}
+    %script{:src => "Rue89%20Strasbourg%20%7C%20Maintenant%20les%20Strasbourgeois%20ont%20leur%20m%C3%A9dia_fichiers/jquery-colorbox-min.html"}
+    %script{:src => "Rue89%20Strasbourg%20%7C%20Maintenant%20les%20Strasbourgeois%20ont%20leur%20m%C3%A9dia_fichiers/scripts.js"}
+    / DEBUT WP FOOTER
+    / FIN WP FOOTER
